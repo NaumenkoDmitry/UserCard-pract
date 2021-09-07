@@ -1,0 +1,81 @@
+@import "./reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.linkWrapper {
+  padding: 20px;
+}
+.cardWrapper {
+  border: 2px solid black;
+  width: 300px;
+  margin: 10px;
+}
+
+.imgWrapper {
+  position: relative;
+  width: inherit;
+  height: 300px;
+}
+.imgWrapper:active {
+  border: 5px solid black;
+}
+.img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: inherit;
+}
+
+.userCard {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: blue;
+  padding: 5px;
+  border: 1px solid black;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: blueviolet;
+}
+.cardName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cardDescription {
+}
+
+.initials {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: black; */
+  color: white;
+}
+
+.initials:empty::after {
+  content: "Unknown";
+}
+
+.icon {
+  color: green;
+}
+
+.icon:hover {
+  color: red;
+}
