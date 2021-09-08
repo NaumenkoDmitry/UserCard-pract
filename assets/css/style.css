@@ -23,7 +23,7 @@
   height: 300px;
 }
 .imgWrapper:active {
-  border: 5px solid black;
+  border: 10px solid orange;
 }
 .img {
   position: absolute;
@@ -36,16 +36,16 @@
 .userCard {
   text-align: center;
 }
-a {
+#a-class {
   text-decoration: none;
   color: blue;
   padding: 5px;
   border: 1px solid black;
 }
-a:hover {
+#a-class:hover {
   color: red;
 }
-a:active {
+#a-class:active {
   color: blueviolet;
 }
 .cardName {
